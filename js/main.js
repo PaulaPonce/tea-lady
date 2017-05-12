@@ -16,23 +16,24 @@ function mostrarData(){
 	var direccion = document.getElementById('Direccion').value;
 	var telefono = document.getElementById('Telefono').value;
 	var pack = document.getElementById('pack').value;
+	var newsletter = document.getElementById('newsletter')
 	
 	if(nombre == ""){
 		alert("Debe ingresar Nombre");
-	}
-	if(apellido == ""){
+	}else if(apellido == ""){
 		alert("Debe ingresar Apellido");	
-	}
-	if(email == ""){
+	}else if(email == ""){
 		alert("Debe ingresar Email");	
-	}
-	if(direccion == ""){
+	}else if(direccion == ""){
 		alert("Debe ingresar Dirección");	
-	}
-	if(telefono == ""){
+	}else if(telefono == ""){
 		alert("Debe ingresar Teléfono");	
-	}
-	
-	clientes.innerHTML = "<b>Nombre: </b>" + nombre + "<br><b>Apellido: </b>" + apellido + "<br><b>Email: </b>" + 
+	}else if(pack == ""){
+		alert("Debe seleccionar una opción");	
+	}else if(!newsletter.checked){
+		alert("Debe aceptar nuestro newsletter");
+	}else{
+		clientes.innerHTML = "<b>Nombre: </b>" + nombre + "<br><b>Apellido: </b>" + apellido + "<br><b>Email: </b>" + 
 		email + "<br><b>Dirección: </b>" + direccion + "<br><b>Teléfono: </b>" + telefono + "<br><b>Pack de té: </b>" + pack;
+	}
 }
