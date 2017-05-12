@@ -1,1 +1,52 @@
 /* Escribe acá tus estilos*/
+
+h1{
+	text-align-last: center;
+}
+
+/*centrar formulario*/
+#formulario{
+	margin: auto;
+   	display: line-block;
+    vertical-align: baseline;
+    text-align-last: center; /*text-align-last*/
+    width: 500px;
+}
+
+/*labels*/
+form label{
+	display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    color: #2D2D2D;
+}
+
+section form #pack-label, section form #pack{
+	display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    width: 450px;
+    height: 30px;
+}
+
+/*checkbox*/
+section form #nl-label{
+	display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    width: 40px;
+}
+
+section form #newsletter{
+	font-size: 15px;
+    color: #2D2D2D;
+}
+
+/*botón*/
+.form-actions{
+	margin: 0;
+	text-align: center;
+}
