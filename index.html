@@ -14,33 +14,41 @@
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
 		<!--Formulario-->
 		<form action="" id="myForm">
-			<label for="Nombre">Nombre:</label>
-			<input type="text" id="Nombre" name="Nombre">
-			<label for="Apellido">Apellido:</label>
-			<input type="text" id="Apellido" name="Apellido">
-			<label for="Email">Correo Electrónico:</label> 
-			<input type="email" id="Email" name="Email">
-			<label for="Direccion">Dirección: </label>
-			<input type="text" id="Direccion" name="Direccion">
-			<label for="Telefono">Teléfono:</label>
-			<input type="text" id="Telefono" name="Telefono">
 			
-			<label for="pack">Selecciona un pack:</label>
-			<select name="pack" id="pack" required>
-				<option value="">Escoje tu opción</option>
-				<option value="clasico">Pack de té clásico (Té negro)</option>
-				<option value="frutales">Pack frutales (Hierbas y té con aromatizado con fruta)</option>
-				<option value="variedades">Pack variedades (Té verde, rojo y blanco)</option>
-			</select>
+				<label for="Nombre">Nombre:</label>
+				<input type="text" id="Nombre" name="Nombre">
+
+				<label for="Apellido">Apellido:</label>
+				<input type="text" id="Apellido" name="Apellido">
+
+				<label for="Email">Correo Electrónico:</label> 
+				<input type="email" id="Email" name="Email">
+
+				<label for="Direccion">Dirección: </label>
+				<input type="text" id="Direccion" name="Direccion">
+
+				<label for="Telefono">Teléfono:</label>
+				<input type="text" id="Telefono" name="Telefono">
+
+				<label for="pack" id="pack-label">Selecciona un pack:</label>
+				<select name="pack" id="pack" required>
+					<option value="">Escoje tu opción</option>
+					<option value="Clásico">Pack de té clásico (Té negro)</option>
+					<option value="Frutales">Pack frutales (Hierbas y té con aromatizado con fruta)</option>
+					<option value="Variedades">Pack variedades (Té verde, rojo y blanco)</option>
+				</select>
+
+				<label for="newsletter" id="nl-label"></label>
+				<input type="checkbox" id="newsletter" required>Recibe nuestro newsletter mensual con actividades y sorteos
+
+			<div class="form-actions">
+				<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
+			</div>
 			
-			<label for="newsletter"></label>
-			<input type="checkbox" id="newsletter" required>Recibe nuestro newsletter mensual con actividades y sorteos
-			
-			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
 		</form>
 	</section>
 	
-	<section id="clientes">
+	<section class="contenedor" id="clientes">
 		<!-- Acá van los datos de ingresados por los clientes -->
 	</section>
 	
