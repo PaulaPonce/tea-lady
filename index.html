@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Té como señora</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Lobster+Two|Tangerine" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -13,7 +14,7 @@
 		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
 		<!--Formulario-->
-		<form action="" id="myForm">
+		<form action="" class="myForm">
 			
 				<label for="Nombre">Nombre:</label>
 				<input type="text" id="Nombre" name="Nombre">
@@ -31,15 +32,15 @@
 				<input type="text" id="Telefono" name="Telefono">
 
 				<label for="pack" id="pack-label">Selecciona un pack:</label>
-				<select name="pack" id="pack" required>
+				<select name="pack" id="pack-select" required>
 					<option value="">Escoje tu opción</option>
 					<option value="Clásico">Pack de té clásico (Té negro)</option>
 					<option value="Frutales">Pack frutales (Hierbas y té con aromatizado con fruta)</option>
 					<option value="Variedades">Pack variedades (Té verde, rojo y blanco)</option>
 				</select>
 
-				<label for="newsletter" id="nl-label"></label>
-				<input type="checkbox" id="newsletter" required>Recibe nuestro newsletter mensual con actividades y sorteos
+				<label for="newsletter"></label>
+				<input type="checkbox" id="newsletter" required><label for="newsletter" class="nwsl">Recibe nuestro newsletter mensual con actividades y sorteos</label>
 
 			<div class="form-actions">
 				<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
