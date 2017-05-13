@@ -1,52 +1,96 @@
 /* Escribe acá tus estilos*/
-
-h1{
-	text-align-last: center;
+*{
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
 }
 
-/*centrar formulario*/
+body{
+	margin: 0;
+}
+
+header h1{
+	font-family: 'Tangerine', cursive;
+	background-color: #8B4513;
+	text-align: center;
+	font-size: 60px;
+	color: #FFFACD;
+	padding: 20px;
+	margin: 0;
+	/*font-weight: 700;*/
+}
+
+/*formulario*/
 #formulario{
-	margin: auto;
-   	display: line-block;
-    vertical-align: baseline;
-    text-align-last: center; /*text-align-last*/
-    width: 500px;
+	background-color: #bf6829;
+	text-align: center;
+	width: 40%;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 10px;	
+}
+
+#formulario p{
+	color: #FFFACD;
 }
 
 /*labels*/
-form label{
+.myForm label{
+	color: #FFFACD;
+	font-weight: bold;
+	font-size: 15px;
 	display: inline-block;
-    vertical-align: baseline;
-    text-align: center;
-    width: 200px;
-    height: 25px;
-    font-size: 15px;
-    color: #2D2D2D;
+    width: 30%;
+    height: 25px;   
 }
 
-section form #pack-label, section form #pack{
+/*input*/
+.myForm input, 
+.myForm select,
+.myForm button{
 	display: inline-block;
-    vertical-align: baseline;
-    text-align: center;
-    width: 450px;
-    height: 30px;
+    width: 40%;
+    color:#EFC483;
+    background-color: rgba(239, 196, 131, 0.3);
+    /*background-color: rgba(173, 82, 16, 0.3);*/
+    border: 1px solid rgba(130, 55, 1, 0.5);
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+/*select*/
+.myForm select{
+	display: block;
+	margin: auto;
+	width: 60%;
+}
+
+.myForm select option{
+	color: #944309;
+	padding: 10px;
 }
 
 /*checkbox*/
-section form #nl-label{
-	display: inline-block;
-    vertical-align: baseline;
-    text-align: center;
-    width: 40px;
+.myForm input[type='checkbox']{
+	margin-top: 20px;
+	padding: 10px;
+	background-color: rgba(255,255,255, 0.2);
+	float: left;
 }
 
-section form #newsletter{
+.myForm .nwsl{
+	color: #FFFACD;
 	font-size: 15px;
-    color: #2D2D2D;
+    width: 120%;
+    margin-top: -20px;
+    float: left;
 }
 
 /*botón*/
-.form-actions{
-	margin: 0;
+.myForm button{
+	background-color: #652e07;
+	border: none;
+	margin: 10px;
+	padding: 10px;
 	text-align: center;
+	font-weight: bold;
 }
